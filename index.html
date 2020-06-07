@@ -1,0 +1,35 @@
+---
+title: 'PC Consulting Asia Co.,Ltd'
+call_to_action: Contact
+background_image_path: /uploads/pconsultingasia.png
+large_header: true
+testimonials:
+  - message: Project Manager & Engineer
+    image: /uploads/pc-consulting-asia.jpg
+    name: Paul Cunliffe
+  - message: Event Planner
+    image: /uploads/unique-phuket-wedding-planners.jpg
+    name: Unique Phuket Weddings Planners & Wedding Celebrant Asia
+  - message: >-
+      Web Developer, SEO, and Social Media Marketing expert. Technical
+      Instructor.
+    image: /uploads/webphuket-logo.png
+    name: Web Phuket
+_options:
+  image:
+    width: 60
+    height: 60
+---
+
+<div class="editable">
+		<p>With his Consulting Company, Paul provides Social Media Marketing, Technical Lead Generation, SEO optimization, Website Development and Event planning services plus teach English to speakers of other languages.</p>
+	</div>
+
+<div class="testimonials">
+	{% for testimonial in page.testimonials %}
+		<blockquote class="testimonial">
+			<p class="testimonial-message">{{ testimonial.message }}</p>
+			<p class="testimonial-author"><img src="{% include relative-src.html src=testimonial.image %}" alt="Photo of {{ testimonial.name }}" /> {{ testimonial.name }}</p>
+		</blockquote>
+	{% endfor %}
+</div>

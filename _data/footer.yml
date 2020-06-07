@@ -1,0 +1,28 @@
+- title: Pages
+  links:
+    - name: Home
+      link: /
+    - name: About
+      link: /about/
+    - name: Contact
+      link: /contact/
+    - name: Blog
+      link: /Advice/
+- title: Social
+  links:
+    - name: Facebook
+      link: 'https://www.facebook.com/seoservicephuket/'
+      social_icon: Facebook
+      new_window: true
+    - name: Twitter
+      link: 'https://twitter.com/phuket_seo'
+      social_icon: Twitter
+      new_window: true
+    - name: Instagram
+      link: 'https://www.instagram.com/phuketseo/'
+      social_icon: Instagram
+      new_window: true
+    - name: LinkedIn
+      link: 'https://www.linkedin.com/in/paul-cunliffe/'
+      social_icon: LinkedIn
+      new_window: true

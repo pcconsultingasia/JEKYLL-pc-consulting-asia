@@ -1,0 +1,60 @@
+---
+title: About
+call_to_action: Contact
+background_image_path:
+large_header: false
+show_in_navigation: true
+navigation_order: 1
+---
+
+<div class="editable">
+		<p>&nbsp;</p>
+		<p>With my Consulting Company, I provide Social Media Marketing, Technical Lead Generation, SEO optimization, Website Development, Event planning services, and teach English to speakers of other languages.</p>
+		<p>My background: Experienced and highly motivated Senior Project Manager with Royal Air Force Engineering background and &nbsp;proven ability in managing IT projects up to value of $10 million and a senior figure in much larger governmental projects. He has experience of directly managed teams of up to 100 personnel in large governmental projects both in the UK and abroad.</p>
+		<p>More recently successfully performed the vast array of Executive Officer duties for 2 successful CEOs of privately owned international companies.</p>
+		<p>&nbsp;</p>
+		<p>With PC Consulting Asia in Phuket, he covers &nbsp; many things but the following are the key parts :</p>
+		<ul>
+			<li><a target="_blank" class="cc-active" href="https://webPhuket">WebPhuket</a></li>
+		</ul>
+		<p>This is a new brand that helps local business have a online business presence with a state of the art performing website. The skills utilized are:</p>
+		<p>Website SEO Optimization<br />Small business Website Design<br />Social Media Marketing and Lead Generation.</p>
+		<p>&nbsp;</p>
+		<ul>
+			<li><a target="_blank" href="https://uniquephuket.com">Unique Phuket Wedding Planners</a></li>
+		</ul>
+		<p><br />Wedding Planner with Unique Phuket Wedding Planners.<br />Wedding Celebrant &amp; Officiant duties.</p>
+		<p>&nbsp;</p>
+		<ul>
+			<li>SSS Recompression Network in Phuket</li>
+		</ul>
+		<p><a href="https://pcconsultingasia.com">Technical Consultant</a> as a Diving Decompression Chamber Engineer with SSS Network in Phuket &amp; Worldwide.</p>
+		<p>&nbsp;</p>
+		<ul>
+			<li><a href="https://pcconsultingasia.com">Technical Executive Officer</a>&nbsp;duties for 2 CEOs.</li>
+		</ul>
+		<p>&nbsp;</p>
+	</div>
+
+<p class="editor-link"><a href="cloudcannon:collections/_staff_members" class="btn"><strong>&#9998;</strong> Update Staff Members</a></p>
+
+<ul class="staff-list">
+	{% for member in site.staff_members %}
+		<li class="staff">
+			<div class="staff-details">
+				<div class="staff-image">
+					<img src="{{ member.image }}" alt="Staff photo for {{ member.name }}" width="120" height="120" />
+				</div>
+				<ul class="staff-info">
+					<li>{{ member.name }}</li>
+					<li><small>{{ member.credentials }}</small></li>
+					<li><a href="tel:{{ site.data.company.contact_phone_number }}">{{ site.data.company.contact_phone_number }}</a>  ext {{ member.phone_extension }}</li>
+				</ul>
+			</div>
+
+			<div class="staff-bio">
+				<p>{{ member.content | markdownify }}</p>
+			</div>
+		</li>
+	{% endfor %}
+</ul>
