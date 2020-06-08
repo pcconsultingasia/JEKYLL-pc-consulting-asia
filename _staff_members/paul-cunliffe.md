@@ -9,7 +9,7 @@ phone_extension:
 
 &nbsp;
 
-With my Consulting Company, I provide Social Media Marketing, Technical Lead Generation, SEO optimization, Website Development, Event planning services, and teach English to speakers of other languages.
+Wit hmy Consulting Company, I provide Social Media Marketing, Technical Lead Generation, SEO optimization, Website Development, Event planning services, and teach English to speakers of other languages.
 
 Background: Experienced and highly motivated Senior Project Manager from a superb Engineering background with proven ability in managing IT projects up to value of $10 million and a senior figure in much larger governmental projects. Experience of directly managed teams of up to 100 personnel in large governmental projects both in the UK and abroad. More recently successfully performed the vast array of Executive Officer duties for 2 successful CEOs of privately owned international companies.
 
