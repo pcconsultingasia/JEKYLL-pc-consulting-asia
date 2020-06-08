@@ -1,8 +1,8 @@
 ---
 title: Contact
-call_to_action: Advice
+call_to_action: Map
 background_image_path:
-large_header: true
+large_header: false
 show_in_navigation: true
 navigation_order: 3
 map:
@@ -12,8 +12,8 @@ map:
 ---
 
 <p class="editable">
-		Come to see Paul in person, give him a call, or send a message with your details. He will be in contact shortly after. No obligations and Paul will buy the coffee on the first meeting.
-	</p>
+	Come see us in person, give us a call, or send us a message with your details and we'll be in contact shortly after. No obligations and your first meeting is free.
+</p>
 
 <div class="columns">
 	<div class="column">
@@ -34,18 +34,18 @@ map:
 	<div class="column">
 		<form method="post" action="/contact-success/">
 			<label for="email_address">Email Address</label>
-			<input id="email_address" type="text" name="email" />
+			<input id="email_address"type="text" name="email">
 
 			<label for="name">Name</label>
-			<input id="name" type="text" name="name" />
+			<input id="name" type="text" name="name">
 
 			<label for="message">Message</label>
 			<textarea id="message" name="message"></textarea>
 
-			<input type="hidden" name="_to" value="{{ site.data.company.contact_email_address }}" />
-			<input type="text" name="_gotcha" style="display: none;" />
+			<input type="hidden" name="_to" value="{{ site.data.company.contact_email_address }}">
+			<input type="text" name="_gotcha" style="display: none;">
 
-			<input type="submit" value="Send Message" />
+			<input type="submit" value="Send Message">
 		</form>
 	</div>
 </div>
@@ -68,18 +68,3 @@ map:
 				center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
-
-			var map = new google.maps.Map(document.getElementById('map'), myOptions);
-
-			var marker = new google.maps.Marker({
-				map: map,
-				position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
-			});
-
-			google.maps.event.addDomListener(window, 'resize', function() {
-				map.setCenter(myOptions.center);
-			});
-		}
-	</script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
-{% endif %}
