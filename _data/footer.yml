@@ -26,3 +26,11 @@
       link: 'https://www.linkedin.com/in/paul-cunliffe/'
       social_icon: LinkedIn
       new_window: true
+    - name: WebPhuket
+      link: 'https://webphuket.com'
+      social_icon:
+      new_window: true
+    - name:
+      link: 'https://weddingcelebrantasia.com'
+      social_icon:
+      new_window: true
